@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+  <title>Periodic Table</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="logo.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+</head>
+<body>
+  <h1>Periodic Table</h1>
+  <div class="periodic-table">
+    <div class="element" data-element="Hydrogen" onclick="showAtom('Hydrogen', 1, 1.008)">H<br>1<br>1.008</div>
+    <div class="element" data-element="Helium" onclick="showAtom('Helium', 2, 4.0026)">He<br>2<br>4.0026</div>
+    <div class="element" data-element="Lithium" onclick="showAtom('Lithium', 3, 6.94)">Li<br>3<br>6.94</div>
+    <div class="element" data-element="Beryllium" onclick="showAtom('Beryllium', 4, 9.0122)">Be<br>4<br>9.0122</div>
+    <div class="element" data-element="Boron" onclick="showAtom('Boron', 5, 10.81)">B<br>5<br>10.81</div>
+    <div class="element" data-element="Carbon" onclick="showAtom('Carbon', 6, 12.011)">C<br>6<br>12.011</div>
+    <div class="element" data-element="Nitrogen" onclick="showAtom('Nitrogen', 7, 14.007)">N<br>7<br>14.007</div>
+    <div class="element" data-element="Oxygen" onclick="showAtom('Oxygen', 8, 15.999)">O<br>8<br>15.999</div>
+    <div class="element" data-element="Fluorine" onclick="showAtom('Fluorine', 9, 18.998)">F<br>9<br>18.998</div>
+    <div class="element" data-element="Neon" onclick="showAtom('Neon', 10, 20.180)">Ne<br>10<br>20.180</div>
+    <div class="element" data-element="Sodium" onclick="showAtom('Sodium', 11, 22.990)">Na<br>11<br>22.990</div>
+    <div class="element" data-element="Magnesium" onclick="showAtom('Magnesium', 12, 24.305)">Mg<br>12<br>24.305</div>
+    <div class="element" data-element="Aluminum" onclick="showAtom('Aluminum', 13, 26.982)">Al<br>13<br>26.982</div>
+    <div class="element" data-element="Silicon" onclick="showAtom('Silicon', 14, 28.085)">Si<br>14<br>28.085</div>
+    <div class="element" data-element="Phosphorus" onclick="showAtom('Phosphorus', 15, 30.974)">P<br>15<br>30.974</div>
+    <div class="element" data-element="Sulfur" onclick="showAtom('Sulfur', 16, 32.06)">S<br>16<br>32.06</div>
+    <div class="element" data-element="Chlorine" onclick="showAtom('Chlorine', 17, 35.45)">Cl<br>17<br>35.45</div>
+    <div class="element" data-element="Argon" onclick="showAtom('Argon', 18, 39.948)">Ar<br>18<br>39.948</div>
+    <div class="element" data-element="Potassium" onclick="showAtom('Potassium', 19, 39.098)">K<br>19<br>39.098</div>
+    <div class="element" data-element="Calcium" onclick="showAtom('Calcium', 20, 40.078)">Ca<br>20<br>40.078</div>
+    <div class="element" data-element="Scandium" onclick="showAtom('Scandium', 21, 44.956)">Sc<br>21<br>44.956</div>
+    <div class="element" data-element="Titanium" onclick="showAtom('Titanium', 22, 47.867)">Ti<br>22<br>47.867</div>
+    <div class="element" data-element="Vanadium" onclick="showAtom('Vanadium', 23, 50.941)">V<br>23<br>50.941</div>
+    <div class="element" data-element="Chromium" onclick="showAtom('Chromium', 24, 51.996)">Cr<br>24<br>51.996</div>
+    <div class="element" data-element="Manganese" onclick="showAtom('Manganese', 25, 54.938)">Mn<br>25<br>54.938</div>
+    <div class="element" data-element="Iron" onclick="showAtom('Iron', 26, 55.845)">Fe<br>26<br>55.845</div>
+    <div class="element" data-element="Cobalt" onclick="showAtom('Cobalt', 27, 58.933)">Co<br>27<br>58.933</div>
+    <div class="element" data-element="Nickel" onclick="showAtom('Nickel', 28, 58.693)">Ni<br>28<br>58.693</div>
+    <div class="element" data-element="Copper" onclick="showAtom('Copper', 29, 63.546)">Cu<br>29<br>63.546</div>
+    <div class="element" data-element="Zinc" onclick="showAtom('Zinc', 30, 65.38)">Zn<br>30<br>65.38</div>
+    <div class="element" data-element="Gallium" onclick="showAtom('Gallium', 31, 69.723)">Ga<br>31<br>69.723</div>
+    <div class="element" data-element="Germanium" onclick="showAtom('Germanium', 32, 72.63)">Ge<br>32<br>72.63</div>
+    <div class="element" data-element="Arsenic" onclick="showAtom('Arsenic', 33, 74.922)">As<br>33<br>74.922</div>
+    <div class="element" data-element="Selenium" onclick="showAtom('Selenium', 34, 78.971)">Se<br>34<br>78.971</div>
+    <div class="element" data-element="Bromine" onclick="showAtom('Bromine', 35, 79.904)">Br<br>35<br>79.904</div>
+    <div class="element" data-element="Krypton" onclick="showAtom('Krypton', 36, 83.798)">Kr<br>36<br>83.798</div>
+    <div class="element" data-element="Rubidium" onclick="showAtom('Rubidium', 37, 85.468)">Rb<br>37<br>85.468</div>
+    <div class="element" data-element="Strontium" onclick="showAtom('Strontium', 38, 87.62)">Sr<br>38<br>87.62</div>
+    <div class="element" data-element="Yttrium" onclick="showAtom('Yttrium', 39, 88.906)">Y<br>39<br>88.906</div>
+    <div class="element" data-element="Zirconium" onclick="showAtom('Zirconium', 40, 91.224)">Zr<br>40<br>91.224</div>
+    <div class="element" data-element="Niobium" onclick="showAtom('Niobium', 41, 92.906)">Nb<br>41<br>92.906</div>
+    <div class="element" data-element="Molybdenum" onclick="showAtom('Molybdenum', 42, 95.95)">Mo<br>42<br>95.95</div>
+    <div class="element" data-element="Technetium" onclick="showAtom('Technetium', 43, 98)">Tc<br>43<br>98</div>
+    <div class="element" data-element="Ruthenium" onclick="showAtom('Ruthenium', 44, 101.07)">Ru<br>44<br>101.07</div>
+    <div class="element" data-element="Rhodium" onclick="showAtom('Rhodium', 45, 102.91)">Rh<br>45<br>102.91</div>
+    <div class="element" data-element="Palladium" onclick="showAtom('Palladium', 46, 106.42)">Pd<br>46<br>106.42</div>
+    <div class="element" data-element="Silver" onclick="showAtom('Silver', 47, 107.87)">Ag<br>47<br>107.87</div>
+    <div class="element" data-element="Cadmium" onclick="showAtom('Cadmium', 48, 112.41)">Cd<br>48<br>112.41</div>
+    <div class="element" data-element="Indium" onclick="showAtom('Indium', 49, 114.82)">In<br>49<br>114.82</div>
+    <div class="element" data-element="Tin" onclick="showAtom('Tin', 50, 118.71)">Sn<br>50<br>118.71</div>
+    <div class="element" data-element="Antimony" onclick="showAtom('Antimony', 51, 121.76)">Sb<br>51<br>121.76</div>
+    <div class="element" data-element="Tellurium" onclick="showAtom('Tellurium', 52, 127.6)">Te<br>52<br>127.6</div>
+    <div class="element" data-element="Iodine" onclick="showAtom('Iodine', 53, 126.90)">I<br>53<br>126.90</div>
+    <div class="element" data-element="Xenon" onclick="showAtom('Xenon', 54, 131.29)">Xe<br>54<br>131.29</div>
+    <div class="element" data-element="Cesium" onclick="showAtom('Cesium', 55, 132.91)">Cs<br>55<br>132.91</div>
+    <div class="element" data-element="Barium" onclick="showAtom('Barium', 56, 137.33)">Ba<br>56<br>137.33</div>
+    <div class="element" data-element="Lanthanum" onclick="showAtom('Lanthanum', 57, 138.90)">La<br>57<br>138.90</div>
+    <div class="element" data-element="Cerium" onclick="showAtom('Cerium', 58, 140.12)">Ce<br>58<br>140.12</div>
+    <div class="element" data-element="Praseodymium" onclick="showAtom('Praseodymium', 59, 140.91)">Pr<br>59<br>140.91</div>
+    <div class="element" data-element="Neodymium" onclick="showAtom('Neodymium', 60, 144.24)">Nd<br>60<br>144.24</div>
+    <div class="element" data-element="Promethium" onclick="showAtom('Promethium', 61, 145)">Pm<br>61<br>145</div>
+    <div class="element" data-element="Samarium" onclick="showAtom('Samarium', 62, 150.36)">Sm<br>62<br>150.36</div>
+    <div class="element" data-element="Europium" onclick="showAtom('Europium', 63, 151.96)">Eu<br>63<br>151.96</div>
+    <div class="element" data-element="Gadolinium" onclick="showAtom('Gadolinium', 64, 157.25)">Gd<br>64<br>157.25</div>
+    <div class="element" data-element="Terbium" onclick="showAtom('Terbium', 65, 158.93)">Tb<br>65<br>158.93</div>
+    <div class="element" data-element="Dysprosium" onclick="showAtom('Dysprosium', 66, 162.50)">Dy<br>66<br>162.50</div>
+    <div class="element" data-element="Holmium" onclick="showAtom('Holmium', 67, 164.93)">Ho<br>67<br>164.93</div>
+    <div class="element" data-element="Erbium" onclick="showAtom('Erbium', 68, 167.26)">Er<br>68<br>167.26</div>
+    <div class="element" data-element="Thulium" onclick="showAtom('Thulium', 69, 168.93)">Tm<br>69<br>168.93</div>
+    <div class="element" data-element="Ytterbium" onclick="showAtom('Ytterbium', 70, 173.04)">Yb<br>70<br>173.04</div>
+    <div class="element" data-element="Lutetium" onclick="showAtom('Lutetium', 71, 174.97)">Lu<br>71<br>174.97</div>
+    <div class="element" data-element="Hafnium" onclick="showAtom('Hafnium', 72, 178.49)">Hf<br>72<br>178.49</div>
+    <div class="element" data-element="Tantalum" onclick="showAtom('Tantalum', 73, 180.95)">Ta<br>73<br>180.95</div>
+    <div class="element" data-element="Tungsten" onclick="showAtom('Tungsten', 74, 183.84)">W<br>74<br>183.84</div>
+    <div class="element" data-element="Rhenium" onclick="showAtom('Rhenium', 75, 186.21)">Re<br>75<br>186.21</div>
+    <div class="element" data-element="Osmium" onclick="showAtom('Osmium', 76, 190.23)">Os<br>76<br>190.23</div>
+    <div class="element" data-element="Iridium" onclick="showAtom('Iridium', 77, 192.22)">Ir<br>77<br>192.22</div>
+    <div class="element" data-element="Platinum" onclick="showAtom('Platinum', 78, 195.08)">Pt<br>78<br>195.08</div>
+    <div class="element" data-element="Gold" onclick="showAtom('Gold', 79, 196.97)">Au<br>79<br>196.97</div>
+    <div class="element" data-element="Mercury" onclick="showAtom('Mercury', 80, 200.59)">Hg<br>80<br>200.59</div>
+    <div class="element" data-element="Thallium" onclick="showAtom('Thallium', 81, 204.38)">Tl<br>81<br>204.38</div>
+    <div class="element" data-element="Lead" onclick="showAtom('Lead', 82, 207.2)">Pb<br>82<br>207.2</div>
+    <div class="element" data-element="Bismuth" onclick="showAtom('Bismuth', 83, 208.98)">Bi<br>83<br>208.98</div>
+    <div class="element" data-element="Polonium" onclick="showAtom('Polonium', 84, 209)">Po<br>84<br>209</div>
+    <div class="element" data-element="Astatine" onclick="showAtom('Astatine', 85, 210)">At<br>85<br>210</div>
+    <div class="element" data-element="Radon" onclick="showAtom('Radon', 86, 222)">Rn<br>86<br>222</div>
+    <div class="element" data-element="Francium" onclick="showAtom('Francium', 87, 223)">Fr<br>87<br>223</div>
+    <div class="element" data-element="Radium" onclick="showAtom('Radium', 88, 226)">Ra<br>88<br>226</div>
+    <div class="element" data-element="Actinium" onclick="showAtom('Actinium', 89, 227)">Ac<br>89<br>227</div>
+    <div class="element" data-element="Thorium" onclick="showAtom('Thorium', 90, 232.04)">Th<br>90<br>232.04</div>
+    <div class="element" data-element="Protactinium" onclick="showAtom('Protactinium', 91, 231.04)">Pa<br>91<br>231.04</div>
+    <div class="element" data-element="Uranium" onclick="showAtom('Uranium', 92, 238.03)">U<br>92<br>238.03</div>
+    <div class="element" data-element="Neptunium" onclick="showAtom('Neptunium', 93, 237)">Np<br>93<br>237</div>
+    <div class="element" data-element="Plutonium" onclick="showAtom('Plutonium', 94, 244)">Pu<br>94<br>244</div>
+    <div class="element" data-element="Americium" onclick="showAtom('Americium', 95, 243)">Am<br>95<br>243</div>
+    <div class="element" data-element="Curium" onclick="showAtom('Curium', 96, 247)">Cm<br>96<br>247</div>
+    <div class="element" data-element="Berkelium" onclick="showAtom('Berkelium', 97, 247)">Bk<br>97<br>247</div>
+    <div class="element" data-element="Californium" onclick="showAtom('Californium', 98, 251)">Cf<br>98<br>251</div>
+    <div class="element" data-element="Einsteinium" onclick="showAtom('Einsteinium', 99, 252)">Es<br>99<br>252</div>
+    <div class="element" data-element="Fermium" onclick="showAtom('Fermium', 100, 257)">Fm<br>100<br>257</div>
+    <div class="element" data-element="Mendelevium" onclick="showAtom('Mendelevium', 101, 258)">Md<br>101<br>258</div>
+    <div class="element" data-element="Nobelium" onclick="showAtom('Nobelium', 102, 259)">No<br>102<br>259</div>
+    <div class="element" data-element="Lawrencium" onclick="showAtom('Lawrencium', 103, 262)">Lr<br>103<br>262</div>
+    <div class="element" data-element="Rutherfordium" onclick="showAtom('Rutherfordium', 104, 267)">Rf<br>104<br>267</div>
+    <div class="element" data-element="Dubnium" onclick="showAtom('Dubnium', 105, 268)">Db<br>105<br>268</div>
+    <div class="element" data-element="Seaborgium" onclick="showAtom('Seaborgium', 106, 271)">Sg<br>106<br>271</div>
+    <div class="element" data-element="Bohrium" onclick="showAtom('Bohrium', 107, 270)">Bh<br>107<br>270</div>
+    <div class="element" data-element="Hassium" onclick="showAtom('Hassium', 108, 277)">Hs<br>108<br>277</div>
+    <div class="element" data-element="Meitnerium" onclick="showAtom('Meitnerium', 109, 278)">Mt<br>109<br>278</div>
+    <div class="element" data-element="Darmstadtium" onclick="showAtom('Darmstadtium', 110, 281)">Ds<br>110<br>281</div>
+    <div class="element" data-element="Roentgenium" onclick="showAtom('Roentgenium', 111, 282)">Rg<br>111<br>282</div>
+    <div class="element" data-element="Copernicium" onclick="showAtom('Copernicium', 112, 285)">Cn<br>112<br>285</div>
+    <div class="element" data-element="Nihonium" onclick="showAtom('Nihonium', 113, 286)">Nh<br>113<br>286</div>
+    <div class="element" data-element="Flerovium" onclick="showAtom('Flerovium', 114, 289)">Fl<br>114<br>289</div>
+    <div class="element" data-element="Moscovium" onclick="showAtom('Moscovium', 115, 288)">Mc<br>115<br>288</div>
+    <div class="element" data-element="Livermorium" onclick="showAtom('Livermorium', 116, 293)">Lv<br>116<br>293</div>
+    <div class="element" data-element="Tennessine" onclick="showAtom('Tennessine', 117, 294)">Ts<br>117<br>294</div>
+    <div class="element" data-element="Oganesson" onclick="showAtom('Oganesson', 118, 294)">Og<br>118<br>294</div>
+</div>
