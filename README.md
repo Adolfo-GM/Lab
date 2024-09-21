@@ -10,8 +10,10 @@ An interactive web app that visualizes atomic structures with animated electrons
 
 ## Screenshots
 
-![App Screenshot 1](app1.png)
-![App Screenshot 2](app2.png)
+<div>
+    <img src="app1.png" alt="App Screenshot 1" style="display:inline; width:45%; margin-right:5%;">
+    <img src="app2.png" alt="App Screenshot 2" style="display:inline; width:45%;">
+</div>
 
 ## Usage
 
